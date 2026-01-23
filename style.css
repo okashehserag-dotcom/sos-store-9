@@ -492,3 +492,104 @@ img{max-width:100%;display:block}
   *{transition:none!important;animation:none!important}
   .reveal{opacity:1;transform:none;filter:none}
 }
+/* ------------------------------
+   Mobile polish pack (<= 520px)
+-------------------------------- */
+@media (max-width: 520px){
+
+  /* توازن عام */
+  body{ font-size: 14px; }
+  .wrap, .container{ padding-inline: 12px; }
+
+  /* الهيدر/التوب بار: مسافات أوضح */
+  .topbar, .header, header{
+    padding-block: 10px;
+  }
+  .topbar .row, .header .row{
+    gap: 8px;
+  }
+
+  /* أزرار الأيقونات (سلة/مفضلة): حجم لمس أفضل */
+  .iconBtn, .badgeBtn, .actionBtn{
+    min-width: 40px;
+    min-height: 40px;
+  }
+
+  /* منطقة التحكم (بحث/فرز/أزرار) خليها عمودية */
+  .controls, .toolbar, .filters, .controlsRow{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  /* البحث ياخذ العرض كامل */
+  .searchWrap, .search, .searchInput{
+    width: 100%;
+  }
+
+  /* صف السيلكتات (الكل/الأبرز) يكون عمودين */
+  .selectRow, .sortRow, .chipsRow{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  /* أزرار (إعادة ضبط/الأقسام) خليها صف متساوي */
+  .btnRow, .actionsRow{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .btnRow .btn, .actionsRow .btn,
+  .btnRow button, .actionsRow button{
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* الـ Hero: أصغر وأنظف */
+  .hero, .heroCard, .promoCard{
+    padding: 14px;
+    border-radius: 18px;
+  }
+  .hero h1, .heroTitle{
+    font-size: 18px;
+    line-height: 1.35;
+    margin-bottom: 6px;
+  }
+  .hero p, .heroSub{
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  /* كروت الأقسام: 2x2 بدون فراغ كبير */
+  #collectionsGrid, .collectionsGrid{
+    gap: 10px;
+  }
+  .collectionCard{
+    min-height: 88px;
+    border-radius: 18px;
+  }
+  .collectionCard__title{ font-size: 16px; }
+  .collectionCard__sub{ font-size: 12px; }
+
+  /* شبكة المنتجات: عمودين واضحين */
+  #productsGrid, .productsGrid, .grid{
+    gap: 12px !important;
+  }
+  .productCard{
+    border-radius: 18px;
+  }
+  .productCard__img, .productImg, .thumb{
+    aspect-ratio: 1 / 1;
+    height: auto !important;
+  }
+  .productCard__title{ font-size: 13px; line-height: 1.35; }
+  .price, .productPrice{ font-size: 13px; }
+
+  /* زر الرجوع للأعلى: بعيد عن الحافة */
+  .toTop{
+    right: 12px;
+    bottom: 12px;
+  }
+}
