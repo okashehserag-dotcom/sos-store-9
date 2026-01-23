@@ -536,3 +536,14 @@ img{max-width:100%;display:block}
     font-size: 10px !important;
   }
 }
+/* Logo size fix */
+.brand__mark{
+  width:46px;
+  height:46px;
+  border-radius:16px;
+  object-fit:cover;
+  display:block;
+}
+@media (max-width:520px){
+  .brand__mark{ width:52px; height:52px; border-radius:18px; }
+}
