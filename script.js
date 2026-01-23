@@ -349,7 +349,7 @@
 
     STORE.collections.forEach((c) => {
       const el = document.createElement("div");
-      el.className = "collectionCard reveal";
+      el.className = "collectionCard reveal is-in";
       el.tabIndex = 0;
       el.setAttribute("role", "button");
       el.setAttribute("aria-label", `فتح قسم: ${c.title}`);
