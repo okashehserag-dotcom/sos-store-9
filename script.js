@@ -86,21 +86,21 @@
 
   STORE.products = seedProducts();
 
-  document.addEventListener("DOMContentLoaded", () => {
-    setText("#year", String(new Date().getFullYear()));
+document.addEventListener("DOMContentLoaded", () => {
+  $("#year").textContent = String(new Date().getFullYear());
+  initTheme();
+  initTopButton();
+  initControls();
+  buildTagSelects();
+  buildCollections();
+  renderProducts(false);
 
-    initTheme();
-    initReveal();
-    initTopButton();
-    initControls();
+  // لازم بعد ما ننشئ العناصر الديناميكية اللي عليها reveal
+  initReveal();
 
-    buildTagSelects();
-    buildCollections();
-    renderProducts(false);
-
-    bindGlobalHandlers();
-    syncCounts();
-  });
+  bindGlobalHandlers();
+  syncCounts();
+});
 
   /* -----------------------------
    * Data seeding / placeholder images
