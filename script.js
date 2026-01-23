@@ -651,11 +651,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Prevent drawer click from bubbling (panel only)
-    ["cartDrawer", "wishDrawer", "collectionDrawer"].forEach((id) => {
-      const d = document.getElementById(id);
-      const panel = d?.querySelector(".drawer__panel");
-      if (panel) panel.addEventListener("click", (ev) => ev.stopPropagation());
-    });
+ ["cartDrawer","wishDrawer","collectionDrawer"].forEach(id => {
+  const d = document.getElementById(id);
+  if(!d) return;
+
+  const panel = d.querySelector(".drawer__panel");
+  if(!panel) return;
+
+  panel.addEventListener("click", (ev) => {
+    // اسمح لزر الإغلاق (X) إنه يشتغل
+    if (ev.target.closest("[data-close]")) return;
+    ev.stopPropagation();
+  });
+});
 
     // ESC closes the top-most overlay
     document.addEventListener("keydown", (e) => {
