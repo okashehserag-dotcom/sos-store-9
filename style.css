@@ -114,22 +114,13 @@ img{max-width:100%;display:block}
 
 .brand{display:flex;align-items:center;gap:12px;min-width:0}
 .brand__mark{
-  width:56px !important;
-  height:56px !important;
-  border-radius:18px !important;
-
-  /* أهم سطرين: يزوّم اللوقو ويقص الفراغات */
-  object-fit:cover !important;
-  object-position:center !important;
-
-  display:block !important;
-  flex:0 0 auto !important;
-
-  background:none !important; 
- border:1px solid color-mix(in srgb, var(--line) 70%, transparent) !important;
-  overflow:hidden;
-transform:scale(1.25);
-
+  width:52px;
+  height:52px;
+  border-radius:18px;
+  object-fit:cover;
+  object-position:center;
+  border:1px solid color-mix(in srgb, var(--line) 70%, transparent);
+  display:block;
 }
 .brand__text{display:flex;flex-direction:column;min-width:0}
 .brand__title{
