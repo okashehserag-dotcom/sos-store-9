@@ -995,30 +995,36 @@ if (wa && STORE.checkoutWhatsApp) {
     totalEl.textContent = String(total);
   }
 
-  function checkout() {
-    const cart = getJSON(LS.cart, {});
-    const ids = Object.keys(cart || {});
-    if (ids.length === 0) {
-      toast(UI.toast.emptyCart);
-      return;
-    }
-
-    const lines = ids
-      .map((id) => {
-        const p = STORE.products.find((x) => x.id === id);
-        const q = cart[id];
-        return p ? `${p.title} × ${q}` : "";
-      })
-      .filter(Boolean);
-
-    const msg = encodeURIComponent(`طلب جديد من ${STORE.brand}:\n` + lines.join("\n"));
-
-    if (STORE.checkoutWhatsApp) {
-      window.open(`https://wa.me/${STORE.checkoutWhatsApp}?text=${msg}`, "_blank", "noopener,noreferrer");
-    } else {
-      window.open(STORE.instagram, "_blank", "noopener,noreferrer");
-    }
+ function checkout() {
+  const cart = getJSON(LS.cart, {});
+  const ids = Object.keys(cart || {});
+  if (ids.length === 0) {
+    toast(UI.toast.emptyCart);
+    return;
   }
+
+  // إذا ما حطيت رقم واتساب، لا تفتح إنستغرام (يضيّع طلب)
+  if (!STORE.checkoutWhatsApp) {
+    toast("حط رقم واتساب داخل checkoutWhatsApp");
+    return;
+  }
+
+  const lines = ids
+    .map((id) => {
+      const p = STORE.products.find((x) => x.id === id);
+      const q = cart[id];
+      return p ? `${p.title} × ${q}` : "";
+    })
+    .filter(Boolean);
+
+  const msg = encodeURIComponent(
+    `طلب جديد من ${STORE.brand}:\n` +
+    lines.join("\n") +
+    `\n\nالاسم:\nالمنطقة/العنوان:\nالمقاس:\nاللون:\nملاحظة:`
+  );
+
+  window.open(`https://wa.me/${STORE.checkoutWhatsApp}?text=${msg}`, "_blank", "noopener,noreferrer");
+}
 
   /* -----------------------------
    * Counts / Like
