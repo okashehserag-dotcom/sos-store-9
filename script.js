@@ -100,6 +100,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   bindGlobalHandlers();
   syncCounts();
+const wa = document.getElementById("waFloat");
+if (wa && STORE.checkoutWhatsApp) {
+  const msg = encodeURIComponent("مرحبا، بدي أطلب من SOS STORE");
+  wa.href = `https://wa.me/${STORE.checkoutWhatsApp}?text=${msg}`;
+}
 });
 
   /* -----------------------------
