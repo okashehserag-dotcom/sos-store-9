@@ -574,3 +574,7 @@ img{max-width:100%;display:block}
   z-index:120;
 }
 .waFloat:hover{transform:translateY(-1px)}
+.actionBtn--primary{
+  background:linear-gradient(135deg, color-mix(in srgb, var(--accent) 98%, transparent), color-mix(in srgb, var(--accent) 62%, transparent));
+  border-color:color-mix(in srgb, var(--accent) 55%, transparent);
+}
