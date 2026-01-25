@@ -11,16 +11,10 @@
     checkoutWhatsApp: "", // مثال: "9627XXXXXXX" بدون + أو 00
     themes: ["beige", "dark", "red"],
     tags: ["all", "new", "popular", "limited", "sale", "accessory", "classic", "sport", "lux"],
-    collections: [
-      { id: "c1", title: "New Arrivals", sub: "جاهز للتعبئة", tag: "new", color: "red" },
-      { id: "c2", title: "Best Sellers", sub: "الأكثر طلبًا", tag: "popular", color: "blue" },
-      { id: "c3", title: "Accessories", sub: "لمسة فخمة", tag: "accessory", color: "green" },
-      { id: "c4", title: "Limited", sub: "كميات محدودة", tag: "limited", color: "yellow" },
-      { id: "c5", title: "Classic", sub: "ستايل ثابت", tag: "classic", color: "blue" },
-      { id: "c6", title: "Sport", sub: "خفيف وحيوي", tag: "sport", color: "green" },
-      { id: "c7", title: "Sale", sub: "عروض", tag: "sale", color: "red" },
-      { id: "c8", title: "Luxury", sub: "فخامة", tag: "lux", color: "yellow" }
-    ],
+   collections: [
+  { id: "c1", title: "تيشيرتات", sub: "جاهز للشحن", tag: "new", color: "blue" },
+  { id: "c2", title: "الأكثر طلبًا", sub: "اختيارات الناس", tag: "popular", color: "red" }
+],
     products: []
   };
 
