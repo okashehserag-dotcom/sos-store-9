@@ -569,3 +569,17 @@ transform:scale(1.25);
   background:color-mix(in srgb, var(--card) 72%, transparent);
   color:var(--muted);
 }
+/* WhatsApp floating button */
+.waFloat{
+  position:fixed;
+  bottom:12px;
+  inset-inline-end:12px;
+  padding:12px 14px;
+  border-radius:16px;
+  border:1px solid var(--line);
+  background:color-mix(in srgb, var(--card) 88%, transparent);
+  box-shadow:var(--shadow);
+  font-weight:950;
+  z-index:120;
+}
+.waFloat:hover{transform:translateY(-1px)}
