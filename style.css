@@ -560,3 +560,12 @@ transform:scale(1.25);
 @media (max-width:520px){
   .brand__mark{ transform:scale(1.35); }
 }
+/* Top bar (Trust bar) */
+.topbar{
+  font-size:12px;
+  padding:8px 10px;
+  text-align:center;
+  border-bottom:1px solid var(--line);
+  background:color-mix(in srgb, var(--card) 72%, transparent);
+  color:var(--muted);
+}
