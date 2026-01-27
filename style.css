@@ -1,4 +1,5 @@
 :root{
+  /* Default = Navy Luxury */
   --bg:#070B14;
   --bg2:#0A1224;
   --card:rgba(255,255,255,.07);
@@ -18,20 +19,7 @@
   --sec-line:rgba(234,240,255,.10);
 }
 
-html[data-theme="dark"]{
-  --bg:#0B0D12;
-  --bg2:#111521;
-  --card:rgba(255,255,255,.06);
-  --ink:#F3F5FA;
-  --muted:rgba(243,245,250,.68);
-  --line:rgba(243,245,250,.12);
-  --accent:#8B5CF6; /* بنفسجي فخم (غيّره إذا بدك) */
-  --shadow:0 18px 55px rgba(0,0,0,.55);
-
-  --sec-bg:rgba(255,255,255,.05);
-  --sec-card:rgba(255,255,255,.06);
-  --sec-line:rgba(243,245,250,.10);
-}
+/* Dark = Neutral Luxury Dark (not blue) */
 html[data-theme="dark"]{
   --bg:#0B0D12;
   --bg2:#121828;
@@ -39,7 +27,7 @@ html[data-theme="dark"]{
   --ink:#F3F6FF;
   --muted:rgba(243,246,255,.68);
   --line:rgba(243,246,255,.12);
-  --accent:#3A7BFF;
+  --accent:#8B5CF6;
   --shadow:0 18px 55px rgba(0,0,0,.55);
 
   --sec-bg:rgba(255,255,255,.05);
@@ -47,6 +35,23 @@ html[data-theme="dark"]{
   --sec-line:rgba(243,246,255,.10);
 }
 
+/* Purple Dark = Deep Royal Purple */
+html[data-theme="purple"]{
+  --bg:#0C0716;
+  --bg2:#140B26;
+  --card:rgba(255,255,255,.06);
+  --ink:#F4EEFF;
+  --muted:rgba(244,238,255,.70);
+  --line:rgba(244,238,255,.12);
+  --accent:#7C3AED;
+  --shadow:0 20px 70px rgba(0,0,0,.58);
+
+  --sec-bg:rgba(124,58,237,.10);
+  --sec-card:rgba(255,255,255,.06);
+  --sec-line:rgba(244,238,255,.10);
+}
+
+/* Red */
 html[data-theme="red"]{
   --bg:#1A0F10;
   --bg2:#241113;
