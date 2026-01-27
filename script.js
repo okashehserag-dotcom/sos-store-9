@@ -6,17 +6,20 @@
    * ----------------------------- */
 
   const STORE = {
-    brand: "SOS STORE",
-    instagram: "https://instagram.com/sos_sstorre",
-    checkoutWhatsApp: "", // مثال: "9627XXXXXXX" بدون + أو 00
-    themes: ["blue", "dark", "red" "purple"],
-    tags: ["all", "new", "popular", "limited", "sale", "accessory", "classic", "sport", "lux"],
-   collections: [
-  { id: "c1", title: "تيشيرتات", sub: "تصاميم جاهزه", tag: "new", color: "blue" },
-  { id: "c2", title: "الأكثر طلبًا", sub: "اختيارات الناس", tag: "popular", color: "red" }
-],
-    products: []
-  };
+  brand: "SERAG STORE",
+  instagram: "https://instagram.com/sos_sstorre",
+  checkoutWhatsApp: "", // مثال: "9627XXXXXXX" بدون + أو 00
+
+  // انتبه للفواصل هنا (هذا مكان خطأ Unexpected string غالبًا)
+  themes: ["beige", "dark", "red", "purple"],
+
+  tags: ["all", "new", "popular", "limited", "sale", "accessory", "classic", "sport", "lux"],
+  collections: [
+    { id: "c1", title: "تيشيرتات", sub: "جاهز للشحن", tag: "new", color: "blue" },
+    { id: "c2", title: "الأكثر طلبًا", sub: "اختيارات الناس", tag: "popular", color: "red" }
+  ],
+  products: []
+};
 
   const UI = {
     themeNames: { blue:"ازرق", dark: "داكن", red: "أحمر", purple: "بنفسجي"},
