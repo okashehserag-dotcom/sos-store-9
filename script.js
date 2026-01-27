@@ -12,14 +12,14 @@
     themes: ["beige", "dark", "red"],
     tags: ["all", "new", "popular", "limited", "sale", "accessory", "classic", "sport", "lux"],
    collections: [
-  { id: "c1", title: "تيشيرتات", sub: "جاهز للشحن", tag: "new", color: "blue" },
+  { id: "c1", title: "تيشيرتات", sub: "تصاميم جاهزه", tag: "new", color: "blue" },
   { id: "c2", title: "الأكثر طلبًا", sub: "اختيارات الناس", tag: "popular", color: "red" }
 ],
     products: []
   };
 
   const UI = {
-    themeNames: { beige: "بيج", dark: "داكن", red: "أحمر" },
+    themeNames: { blue:"ازرق", dark: "داكن", red: "أحمر" },
     toast: {
       searchCleared: "تم مسح البحث",
       sectionSearchCleared: "تم مسح بحث القسم",
