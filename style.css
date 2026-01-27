@@ -31,18 +31,18 @@
 }
 
 html[data-theme="dark"]{
-  --bg:#0E1116;
-  --bg2:#121824;
-  --card:rgba(20,24,32,.84);
-  --ink:#F4EEE4;
-  --muted:rgba(244,238,228,.68);
-  --line:rgba(244,238,228,.14);
-  --shadow:0 20px 70px rgba(0,0,0,.50);
-  --accent:#C8A96A;
+  --bg:#070B14;
+  --bg2:#0A1224;
+  --card:rgba(255,255,255,.07);
+  --ink:#EAF0FF;
+  --muted:rgba(234,240,255,.72);
+  --line:rgba(234,240,255,.12);
+  --accent:#3A7BFF;
+  --shadow:0 18px 55px rgba(0,0,0,.50);
 
-  --sec-bg:rgba(200,169,106,.08);
-  --sec-card:rgba(20,24,32,.90);
-  --sec-line:rgba(244,238,228,.14);
+  --sec-bg:rgba(58,123,255,.10);
+  --sec-card:rgba(255,255,255,.07);
+  --sec-line:rgba(234,240,255,.10);
 }
 
 html[data-theme="red"]{
