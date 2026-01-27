@@ -9,7 +9,7 @@
     brand: "SOS STORE",
     instagram: "https://instagram.com/sos_sstorre",
     checkoutWhatsApp: "", // مثال: "9627XXXXXXX" بدون + أو 00
-    themes: ["blue", "dark", "red"],
+    themes: ["blue", "dark", "red" "purple"],
     tags: ["all", "new", "popular", "limited", "sale", "accessory", "classic", "sport", "lux"],
    collections: [
   { id: "c1", title: "تيشيرتات", sub: "تصاميم جاهزه", tag: "new", color: "blue" },
@@ -19,7 +19,7 @@
   };
 
   const UI = {
-    themeNames: { blue:"ازرق", dark: "داكن", red: "أحمر" },
+    themeNames: { blue:"ازرق", dark: "داكن", red: "أحمر", purple: "بنفسجي"},
     toast: {
       searchCleared: "تم مسح البحث",
       sectionSearchCleared: "تم مسح بحث القسم",
