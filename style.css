@@ -1,5 +1,5 @@
 :root{
-  /* Default = Navy Luxury */
+  /* BLUE (Default) */
   --bg:#070B14;
   --bg2:#0A1224;
   --card:rgba(255,255,255,.07);
@@ -19,8 +19,8 @@
   --sec-line:rgba(234,240,255,.10);
 }
 
-/* Dark = Neutral Luxury Dark (not blue) */
 html[data-theme="dark"]{
+  /* DARK (Neutral) */
   --bg:#0B0D12;
   --bg2:#121828;
   --card:rgba(255,255,255,.06);
@@ -35,8 +35,8 @@ html[data-theme="dark"]{
   --sec-line:rgba(243,246,255,.10);
 }
 
-/* Purple Dark = Deep Royal Purple */
 html[data-theme="purple"]{
+  /* PURPLE (Deep) */
   --bg:#0C0716;
   --bg2:#140B26;
   --card:rgba(255,255,255,.06);
@@ -51,7 +51,6 @@ html[data-theme="purple"]{
   --sec-line:rgba(244,238,255,.10);
 }
 
-/* Red */
 html[data-theme="red"]{
   --bg:#1A0F10;
   --bg2:#241113;
