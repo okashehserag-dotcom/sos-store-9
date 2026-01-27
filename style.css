@@ -20,19 +20,29 @@
 }
 
 html[data-theme="dark"]{
-  /* DARK (Neutral) */
-  --bg:#0B0D12;
-  --bg2:#121828;
-  --card:rgba(255,255,255,.06);
-  --ink:#F3F6FF;
-  --muted:rgba(243,246,255,.68);
-  --line:rgba(243,246,255,.12);
-  --accent:#8B5CF6;
-  --shadow:0 18px 55px rgba(0,0,0,.55);
+  /* Black + Warm Beige (Luxury Dark) */
+  --bg:#0B0A08;
+  --bg2:#12100D;
 
-  --sec-bg:rgba(255,255,255,.05);
-  --sec-card:rgba(255,255,255,.06);
-  --sec-line:rgba(243,246,255,.10);
+  /* surfaces */
+  --card:rgba(255,248,238,.07);
+
+  /* text */
+  --ink:#F7F2EA;
+  --muted:rgba(247,242,234,.70);
+
+  /* lines */
+  --line:rgba(247,242,234,.12);
+
+  /* buttons / highlight = BEIGE */
+  --accent:#E7D9C4;
+
+  --shadow:0 18px 55px rgba(0,0,0,.60);
+
+  /* sections */
+  --sec-bg:rgba(231,217,196,.10);
+  --sec-card:rgba(255,248,238,.07);
+  --sec-line:rgba(247,242,234,.10);
 }
 
 html[data-theme="purple"]{
