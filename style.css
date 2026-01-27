@@ -1,22 +1,11 @@
 :root{
-  /* Midnight Navy (فخم وقريب من الدارك) */
   --bg:#070B14;
   --bg2:#0A1224;
-
-  /* Glass card */
   --card:rgba(255,255,255,.07);
-
-  /* Text */
   --ink:#EAF0FF;
   --muted:rgba(234,240,255,.72);
-
-  /* Lines */
   --line:rgba(234,240,255,.12);
-
-  /* Luxury accent (Royal Blue) */
   --accent:#3A7BFF;
-
-  /* Shadow */
   --shadow:0 18px 55px rgba(0,0,0,.50);
 
   --r:22px;
@@ -24,7 +13,6 @@
   --e:cubic-bezier(.2,.85,.2,1);
   --container:1180px;
 
-  /* Secondary surfaces */
   --sec-bg:rgba(58,123,255,.10);
   --sec-card:rgba(255,255,255,.07);
   --sec-line:rgba(234,240,255,.10);
