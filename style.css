@@ -1,20 +1,33 @@
 :root{
-  --bg:#F6ECDD;
-  --bg2:#EFE0C9;
-  --card:rgba(255,248,238,.92);
-  --ink:#201810;
-  --muted:rgba(32,24,16,.70);
-  --line:rgba(32,24,16,.14);
-  --accent:#C8A96A;
-  --shadow:0 18px 55px rgba(20,16,10,.14);
+  /* Midnight Navy (فخم وقريب من الدارك) */
+  --bg:#070B14;
+  --bg2:#0A1224;
+
+  /* Glass card */
+  --card:rgba(255,255,255,.07);
+
+  /* Text */
+  --ink:#EAF0FF;
+  --muted:rgba(234,240,255,.72);
+
+  /* Lines */
+  --line:rgba(234,240,255,.12);
+
+  /* Luxury accent (Royal Blue) */
+  --accent:#3A7BFF;
+
+  /* Shadow */
+  --shadow:0 18px 55px rgba(0,0,0,.50);
+
   --r:22px;
   --t:180ms;
   --e:cubic-bezier(.2,.85,.2,1);
   --container:1180px;
 
-  --sec-bg:rgba(200,169,106,.10);
-  --sec-card:rgba(255,248,238,.92);
-  --sec-line:rgba(32,24,16,.12);
+  /* Secondary surfaces */
+  --sec-bg:rgba(58,123,255,.10);
+  --sec-card:rgba(255,255,255,.07);
+  --sec-line:rgba(234,240,255,.10);
 }
 
 html[data-theme="dark"]{
