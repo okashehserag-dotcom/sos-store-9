@@ -32,6 +32,20 @@ html[data-theme="dark"]{
   --sec-card:rgba(255,255,255,.06);
   --sec-line:rgba(243,245,250,.10);
 }
+html[data-theme="dark"]{
+  --bg:#0B0D12;
+  --bg2:#121828;
+  --card:rgba(255,255,255,.06);
+  --ink:#F3F6FF;
+  --muted:rgba(243,246,255,.68);
+  --line:rgba(243,246,255,.12);
+  --accent:#3A7BFF;
+  --shadow:0 18px 55px rgba(0,0,0,.55);
+
+  --sec-bg:rgba(255,255,255,.05);
+  --sec-card:rgba(255,255,255,.06);
+  --sec-line:rgba(243,246,255,.10);
+}
 
 html[data-theme="red"]{
   --bg:#1A0F10;
