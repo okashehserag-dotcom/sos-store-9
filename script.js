@@ -9,7 +9,7 @@
     brand: "SOS STORE",
     instagram: "https://instagram.com/sos_sstorre",
     checkoutWhatsApp: "", // مثال: "9627XXXXXXX" بدون + أو 00
-    themes: ["beige", "dark", "red"],
+    themes: ["blue", "dark", "red"],
     tags: ["all", "new", "popular", "limited", "sale", "accessory", "classic", "sport", "lux"],
    collections: [
   { id: "c1", title: "تيشيرتات", sub: "تصاميم جاهزه", tag: "new", color: "blue" },
