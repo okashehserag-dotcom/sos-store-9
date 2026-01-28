@@ -630,3 +630,7 @@ img{max-width:100%;display:block}
   justify-content:center;
   padding: 18px;
 }
+.motto--big{
+  font-size: 15px; /* كبّرها */
+  letter-spacing: .12em;
+}
